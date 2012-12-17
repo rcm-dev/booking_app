@@ -1,38 +1,72 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<?php 
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+/**
+ * Set variable Page view on the top
+ * and the page auto set page
+ */
+$page_view = "Welcome to Booking System";
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+?>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<?php
 
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
-</html>
+/**
+ * Include header template
+ */
+include ('header.tpl.php'); 
+
+?>
+
+
+
+
+<section class="container center">
+    <header id="header">
+        <section id="logo" class="left">
+            <h1>Logo</h1>
+        </section>
+        <section id="address" class="right">
+            <address>Innovatis Sdn Bhd<br/>B201, Block B, Level 2, Phileo Damansara II, 15, Jalan 16/11,<br/>46350, Petaling Jaya, Selangor, Malaysia.<br/>Tel  : +6.03.7665.0607  Fax  : +6.03.7665.0610</address>
+        </section>
+        <section class="cleafix"></section>
+    </header>
+    <!-- #header -->
+
+
+<section class="center">
+
+    <section id="content">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo deleniti at ad hic amet aspernatur distinctio ipsum repellat reiciendis facilis recusandae aperiam iusto ducimus culpa esse vel perspiciatis iste adipisci officia dicta repudiandae illum assumenda. Distinctio iste nostrum eum asperiores laudantium officiis autem dolor ipsa blanditiis magnam aliquid itaque minus id qui ex soluta tempore repellat corporis totam ut a provident vel praesentium voluptate dolorem obcaecati eligendi similique explicabo error voluptas quas sed consectetur natus pariatur quia sequi quo dicta! Officia inventore molestiae illum delectus ad perferendis veritatis distinctio sapiente architecto eveniet dolore sit natus ab iure numquam alias esse.</p>
+    </section>
+    <!-- #content -->
+
+</section>
+<!-- <section class="container center"></section> -->
+
+
+<section class="center">
+    <footer id="footer">
+        <p>&copy; 2012 Booking Application for Amanagappa Resort by Rich Core Media Team</p>
+    </footer>
+    <!-- #footer -->
+</section>
+<!-- <section class="container center"></section> -->
+
+
+
+
+
+
+<?php 
+
+/**
+ * Include footer template
+ */
+
+include ('footer.tpl.php'); 
+
+
+?>
