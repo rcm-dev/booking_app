@@ -20,3 +20,15 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+
+<section class="container center">
+    <header id="header">
+        <section id="logo" class="left">
+            <h1>Logo</h1>
+        </section>
+        <section id="address" class="right">
+            <address>Innovatis Sdn Bhd<br/>B201, Block B, Level 2, Phileo Damansara II, 15, Jalan 16/11,<br/>46350, Petaling Jaya, Selangor, Malaysia.<br/>Tel  : +6.03.7665.0607  Fax  : +6.03.7665.0610</address>
+        </section>
+        <section class="cleafix"></section>
+    </header>
+    <!-- #header -->

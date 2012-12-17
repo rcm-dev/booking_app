@@ -20,21 +20,6 @@ include ('header.tpl.php');
 ?>
 
 
-
-
-<section class="container center">
-    <header id="header">
-        <section id="logo" class="left">
-            <h1>Logo</h1>
-        </section>
-        <section id="address" class="right">
-            <address>Innovatis Sdn Bhd<br/>B201, Block B, Level 2, Phileo Damansara II, 15, Jalan 16/11,<br/>46350, Petaling Jaya, Selangor, Malaysia.<br/>Tel  : +6.03.7665.0607  Fax  : +6.03.7665.0610</address>
-        </section>
-        <section class="cleafix"></section>
-    </header>
-    <!-- #header -->
-
-
 <section class="center">
 
     <section id="content">
@@ -45,17 +30,6 @@ include ('header.tpl.php');
 
 </section>
 <!-- <section class="container center"></section> -->
-
-
-<section class="center">
-    <footer id="footer">
-        <p>&copy; 2012 Booking Application for Amanagappa Resort by Rich Core Media Team</p>
-    </footer>
-    <!-- #footer -->
-</section>
-<!-- <section class="container center"></section> -->
-
-
 
 
 
