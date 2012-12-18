@@ -92,7 +92,7 @@ include ('header.tpl.php');
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
-      <td><input type="submit" value="Insert record"></td>
+      <td><input type="submit" value="Update"></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form1">
@@ -103,7 +103,7 @@ include ('header.tpl.php');
 </section>
 <?php 
 
-<?php
+
 mysql_free_result($update);
 ?>
-/**
+  
