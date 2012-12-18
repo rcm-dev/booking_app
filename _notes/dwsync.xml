@@ -5,5 +5,6 @@
 <file name="index.php" server="C:/xampp/htdocs/" local="130002713737459420" remote="130002713730000000" />
 <file name="register.php" server="C:/xampp/htdocs/" local="130002762967045192" remote="130002762960000000" />
 <file name="update_profile.php" server="C:/xampp/htdocs/" local="130002773298856137" remote="130002773290000000" />
-<file name="guest-login.php" server="C:/xampp/htdocs/" local="130002800849321934" remote="130002800840000000" />
+<file name="guest-login.php" server="C:/xampp/htdocs/" local="130002805746892059" remote="130002805740000000" />
+<file name="guest-dashboard.php" server="C:/xampp/htdocs/" local="130002809080252716" remote="130002809080000000" />
 </dwsync>

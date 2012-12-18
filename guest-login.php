@@ -39,6 +39,16 @@ $login = mysql_query($query_login, $bookingAppCon) or die(mysql_error());
 $row_login = mysql_fetch_assoc($login);
 $totalRows_login = mysql_num_rows($login);
 
+$colname_Recordset1 = "-1";
+if (isset($_SESSION['MM_Username'])) {
+  $colname_Recordset1 = $_SESSION['MM_Username'];
+}
+mysql_select_db($database_bookingAppCon, $bookingAppCon);
+$query_Recordset1 = sprintf("SELECT firstName, lastName FROM guest_info WHERE Email = %s", GetSQLValueString($colname_Recordset1, "text"));
+$Recordset1 = mysql_query($query_Recordset1, $bookingAppCon) or die(mysql_error());
+$row_Recordset1 = mysql_fetch_assoc($Recordset1);
+$totalRows_Recordset1 = mysql_num_rows($Recordset1);
+
 
 /**
  * Include header template
@@ -61,12 +71,12 @@ if (isset($_POST['Email2'])) {
   $loginUsername=$_POST['Email2'];
   $password=$_POST['password'];
   $MM_fldUserAuthorization = "";
-  $MM_redirectLoginSuccess = "index.php";
+  $MM_redirectLoginSuccess = "guest-dashboard.php";
   $MM_redirectLoginFailed = "login.php";
   $MM_redirecttoReferrer = false;
   mysql_select_db($database_bookingAppCon, $bookingAppCon);
   
-  $LoginRS__query=sprintf("SELECT Email, password FROM guest_info WHERE Email=%s AND password=%s",
+  $LoginRS__query=sprintf("SELECT Email, password FROM guest_info WHERE Email=%s AND password=md5(%s)",
     GetSQLValueString($loginUsername, "text"), GetSQLValueString($password, "text")); 
    
   $LoginRS = mysql_query($LoginRS__query, $bookingAppCon) or die(mysql_error());
@@ -157,6 +167,8 @@ include ('footer.tpl.php');
 
 
 mysql_free_result($login);
+
+mysql_free_result($Recordset1);
 ?>
 <script type="text/javascript">
 <!--

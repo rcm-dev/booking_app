@@ -2,4 +2,5 @@
 <info>
 	<infoitem key="UD_rsLogin" value="name:Email;datatype:string,name:password;datatype:string" />
 	<infoitem key="UD_login" value="name:Email;datatype:string,name:password;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:firstName;datatype:string,name:lastName;datatype:string" />
 </info>
