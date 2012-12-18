@@ -84,8 +84,23 @@ include ('header.tpl.php');
     
     <section id="content">  
     
-    
-    
+<form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
+  <table align="center">
+    <tr valign="baseline">
+      <td nowrap="nowrap" align="right">Email:</td>
+      <td><input type="text" name="Email" value="" size="32" /></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap="nowrap" align="right">Password:</td>
+      <td><input type="password" name="password" value="" size="32" /></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap="nowrap" align="right">&nbsp;</td>
+      <td><input type="submit" value="Login" /></td>
+    </tr>
+  </table>
+  <input type="hidden" name="MM_insert" value="form1" />
+</form>    
     
       </section>
     <!-- #content -->
@@ -107,23 +122,7 @@ include ('footer.tpl.php');
 ?>
 </p>
 
-<form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
-  <table align="center">
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Email:</td>
-      <td><input type="text" name="Email" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">Password:</td>
-      <td><input type="password" name="password" value="" size="32" /></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap="nowrap" align="right">&nbsp;</td>
-      <td><input type="submit" value="Login" /></td>
-    </tr>
-  </table>
-  <input type="hidden" name="MM_insert" value="form1" />
-</form>
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp; </p>
