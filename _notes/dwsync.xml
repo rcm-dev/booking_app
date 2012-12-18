@@ -8,4 +8,9 @@
 <file name="guest-login.php" server="C:/xampp/htdocs/" local="130002805746892059" remote="130002805740000000" />
 <file name="guest-dashboard.php" server="C:/xampp/htdocs/" local="130002809080252716" remote="130002809080000000" />
 <file name="admin-dashboard.php" server="C:/xampp/htdocs/" local="130002081620216936" remote="130002081620000000" />
+<file name="header.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130003299804574882" remote="130003299800000000" />
+<file name="footer.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130003299804464876" remote="130003299800000000" />
+<file name="index.php" server="C:/xampp/htdocs/booking_app/" local="130003299804864899" remote="130003299800000000" />
+<file name="guest-dashboard.php" server="C:/xampp/htdocs/booking_app/" local="130003417244172043" remote="130003417240000000" />
+<file name="update_profile.php" server="C:/xampp/htdocs/booking_app/" local="130003417244942087" remote="130003417240000000" />
 </dwsync>
