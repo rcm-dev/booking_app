@@ -54,7 +54,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   mysql_select_db($database_bookingAppCon, $bookingAppCon);
   $Result1 = mysql_query($insertSQL, $bookingAppCon) or die(mysql_error());
 
-  $insertGoTo = "index.php";
+  $insertGoTo = "guest-dashboard.php";
   if (isset($_SERVER['QUERY_STRING'])) {
     $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
     $insertGoTo .= $_SERVER['QUERY_STRING'];
