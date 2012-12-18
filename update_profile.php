@@ -53,8 +53,40 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   header(sprintf("Location: %s", $insertGoTo));
 }
 
+if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form2")) {
+  $updateSQL = sprintf("UPDATE guest_info SET guest_id=%s, firstName=%s, lastName=%s, phone_no=%s WHERE Email=%s",
+                       GetSQLValueString($_POST['guest_id'], "int"),
+                       GetSQLValueString($_POST['firstName'], "text"),
+                       GetSQLValueString($_POST['lastName'], "text"),
+                       GetSQLValueString($_POST['phone_no'], "int"),
+                       GetSQLValueString($_POST['Email'], "text"));
+
+  mysql_select_db($database_bookingAppCon, $bookingAppCon);
+  $Result1 = mysql_query($updateSQL, $bookingAppCon) or die(mysql_error());
+
+  $updateGoTo = "guest-dashboard.php";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $updateGoTo .= (strpos($updateGoTo, '?')) ? "&" : "?";
+    $updateGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $updateGoTo));
+}
+
 mysql_select_db($database_bookingAppCon, $bookingAppCon);
 $query_update = "SELECT firstName, lastName, Email, phone_no FROM guest_info";
+$update = mysql_query($query_update, $bookingAppCon) or die(mysql_error());
+$row_update = mysql_fetch_assoc($update);
+$totalRows_update = "-1";
+if (isset($_GET['Email'])) {
+  $totalRows_update = $_GET['Email'];
+}
+$colname_update = "-1";
+$colname_update = "-1";
+if (isset($_GET['Email'])) {
+  $colname_update = $_GET['Email'];
+}
+mysql_select_db($database_bookingAppCon, $bookingAppCon);
+$query_update = sprintf("SELECT * FROM guest_info WHERE Email = %s", GetSQLValueString($colname_update, "text"));
 $update = mysql_query($query_update, $bookingAppCon) or die(mysql_error());
 $row_update = mysql_fetch_assoc($update);
 $totalRows_update = mysql_num_rows($update);
@@ -72,31 +104,38 @@ include ('header.tpl.php');
   
   </p>
 <h1>UPDATE PROFILE</h1>
-<form method="post" name="form1" action="<?php echo $editFormAction; ?>">
+
+<form action="<?php echo $editFormAction; ?>" method="post" name="form2" id="form2">
   <table align="center">
     <tr valign="baseline">
-      <td nowrap align="right">FirstName:</td>
-      <td><input type="text" name="firstName" value="" size="32"></td>
+      <td nowrap="nowrap" align="right">Guest_id:</td>
+      <td><input type="text" name="guest_id" value="<?php echo htmlentities($row_update['guest_id'], ENT_COMPAT, ''); ?>" size="32" /></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">LastName:</td>
-      <td><input type="text" name="lastName" value="" size="32"></td>
+      <td nowrap="nowrap" align="right">FirstName:</td>
+      <td><input type="text" name="firstName" value="<?php echo htmlentities($row_update['firstName'], ENT_COMPAT, ''); ?>" size="32" /></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Email:</td>
-      <td><input type="text" name="Email" value="" size="32"></td>
+      <td nowrap="nowrap" align="right">LastName:</td>
+      <td><input type="text" name="lastName" value="<?php echo htmlentities($row_update['lastName'], ENT_COMPAT, ''); ?>" size="32" /></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Phone_no:</td>
-      <td><input type="text" name="phone_no" value="" size="32"></td>
+      <td nowrap="nowrap" align="right">Email:</td>
+      <td><?php echo $row_update['Email']; ?></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">&nbsp;</td>
-      <td><input type="submit" value="Update"></td>
+      <td nowrap="nowrap" align="right">Phone_no:</td>
+      <td><input type="text" name="phone_no" value="<?php echo htmlentities($row_update['phone_no'], ENT_COMPAT, ''); ?>" size="32" /></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap="nowrap" align="right">&nbsp;</td>
+      <td><input type="submit" value="Update record" /></td>
     </tr>
   </table>
-  <input type="hidden" name="MM_insert" value="form1">
+  <input type="hidden" name="MM_update" value="form2" />
+  <input type="hidden" name="Email" value="<?php echo $row_update['Email']; ?>" />
 </form>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
     </section>
   <!-- #content -->
