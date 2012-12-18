@@ -3,6 +3,9 @@
 <file name="header.tpl.php" server="C:/xampp/htdocs/" local="130002081620426948" remote="130002081620000000" />
 <file name="footer.tpl.php" server="C:/xampp/htdocs/" local="130002081620406947" remote="130002081620000000" />
 <file name="index.php" server="C:/xampp/htdocs/" local="130002713737459420" remote="130002713730000000" />
-<file name="register.php" server="C:/xampp/htdocs/" local="130002732318982223" remote="130002732310000000" />
+<file name="register.php" server="C:/xampp/htdocs/" local="130002762967045192" remote="130002762960000000" />
 <file name="register1.php" server="C:/xampp/htdocs/" local="130002750808039736" remote="130002750800000000" />
+<file name="update_profile.php" server="C:/xampp/htdocs/" local="130002773298856137" remote="130002773290000000" />
+<file name="guest-login.php" server="C:/xampp/htdocs/" local="130002800849321934" remote="130002800840000000" />
+<file name="login.php" server="C:/xampp/htdocs/" local="130002800399106183" remote="130002800390000000" />
 </dwsync>
