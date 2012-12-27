@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsStep1" value="name:date_check_in;datatype:date,name:date_check_out;datatype:date" />
+</info>

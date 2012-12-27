@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_booking_detail" value="name:booking_detail_id;datatype:int,name:pax_adult;datatype:int,name:price_package;datatype:real,name:additional_night;datatype:real,name:total;datatype:real,name:room_id_fk;datatype:int,name:pax_child;datatype:int" />
+</info>

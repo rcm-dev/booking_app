@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsStep1" value="name:date_check_in;datatype:date,name:date_check_out;datatype:date" />
+	<infoitem key="UD_rsStep2" value="name:date_check_in;datatype:date,name:date_check_out;datatype:date,name:room_name;datatype:string,name:room_number;datatype:int,name:room_type;datatype:string,name:firstName;datatype:string,name:lastName;datatype:string,name:Email;datatype:string,name:phone_no;datatype:int" />
+</info>

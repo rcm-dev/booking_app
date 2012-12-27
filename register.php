@@ -46,7 +46,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 }
 
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
-  $insertSQL = sprintf("INSERT INTO guest_info (Email, password, confirm_password) VALUES (%s, md5(%s), md5(%s))",
+  $insertSQL = sprintf("INSERT INTO guest_info (Email, password, confirm_password) VALUES (%s, %s, %s)",
                        GetSQLValueString($_POST['Email'], "text"),
                        GetSQLValueString($_POST['password'], "text"),
                        GetSQLValueString($_POST['confirm_password'], "text"));
