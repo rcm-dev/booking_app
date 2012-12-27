@@ -3,8 +3,14 @@
 <file name="normalize.min.css" server="C:/xampp/htdocs/" local="130002081620376946" remote="130002081620000000" />
 <file name="main.css" server="C:/xampp/htdocs/" local="130002081620346944" remote="130002081620000000" />
 <file name="amannagappa.css" server="C:/xampp/htdocs/" local="130002081620336943" remote="130002081620000000" />
+<<<<<<< HEAD
 <file name="normalize.min.css" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="main.css" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="amannagappa.css" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="normalize.css" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
+=======
+<file name="normalize.min.css" server="C:/xampp/htdocs/booking_app/" local="130003299804304867" remote="130003299800000000" />
+<file name="main.css" server="C:/xampp/htdocs/booking_app/" local="130003299804134857" remote="130003299800000000" />
+<file name="amannagappa.css" server="C:/xampp/htdocs/booking_app/" local="130003299804074854" remote="130003299800000000" />
+>>>>>>> origin/master
 </dwsync>

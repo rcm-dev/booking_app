@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="MMHTTPDB.php" server="C:/xampp/htdocs/" local="130002081620186935" remote="130002081620000000" />
 <file name="mysql.php" server="C:/xampp/htdocs/" local="130002081620216936" remote="130002081620000000" />
 <file name="MMHTTPDB.php" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="mysql.php" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
+=======
+<file name="MMHTTPDB.php" server="C:/xampp/htdocs/booking_app/" local="130003299802514764" remote="130003299800000000" />
+<file name="mysql.php" server="C:/xampp/htdocs/booking_app/" local="130003299803014793" remote="130003299800000000" />
+>>>>>>> origin/master
 </dwsync>

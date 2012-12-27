@@ -8,10 +8,18 @@
 <file name="guest-login.php" server="C:/xampp/htdocs/" local="130002812733231655" remote="130002812730000000" />
 <file name="guest-dashboard.php" server="C:/xampp/htdocs/" local="130002822961916702" remote="130002822960000000" />
 <file name="admin-dashboard.php" server="C:/xampp/htdocs/" local="130002081620216936" remote="130002081620000000" />
+<<<<<<< HEAD
 <file name="sample.php" server="C:/xampp/htdocs/booking_app/" local="130004177987480940" remote="130004177980000000" />
 <file name="header.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="footer.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130002657640000000" remote="130002657640000000" />
 <file name="Reservation.php" server="C:/xampp/htdocs/booking_app/" local="130009775320119242" remote="130009775320000000" />
 <file name="booking_detail.php" server="C:/xampp/htdocs/booking_app/" local="130008510940000000" remote="130008510940000000" />
 <file name="TEST.php" server="C:/xampp/htdocs/booking_app/" local="130010401670850699" remote="130010401670000000" />
+=======
+<file name="header.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130003299804574882" remote="130003299800000000" />
+<file name="footer.tpl.php" server="C:/xampp/htdocs/booking_app/" local="130003299804464876" remote="130003299800000000" />
+<file name="index.php" server="C:/xampp/htdocs/booking_app/" local="130003299804864899" remote="130003299800000000" />
+<file name="guest-dashboard.php" server="C:/xampp/htdocs/booking_app/" local="130003417244172043" remote="130003417240000000" />
+<file name="update_profile.php" server="C:/xampp/htdocs/booking_app/" local="130003417244942087" remote="130003417240000000" />
+>>>>>>> origin/master
 </dwsync>
